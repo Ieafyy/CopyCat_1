@@ -1,0 +1,445 @@
+<html>
+
+<head>
+    <title>Accenture Digital Product Dev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/908910519c.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        #search-bar:focus{
+            outline: none;
+        }
+
+    </style>
+</head>
+
+<body class="text-stone-500" style="zoom:100%;">
+    <header class="grid grid-cols-2 py-5 lg:px-40 sm:px-5 text-stone-500">
+        <div class="">
+            <span class="bg-black rounded-full inline-block w-7 h-7 hover:cursor-pointer"></span>
+        </div>
+        <div class="flex gap-2 justify-self-end">
+            <p class="mt-2 mr-3 hover:cursor-pointer">Sign in</p>
+            <p class="border border-3 rounded-full px-5 py-2 border-stone-500 hover:cursor-pointer">Get started</p>
+        </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-purple-500 to-pink-500 pt-20 lg:pb-15 sm:pb-20 grid">
+        <img class="justify-self-center drop-shadow-2xl" src="container.png" alt="container">
+    </div>
+
+
+    <div class="grid grid-cols-2 my-10 lg:px-40 sm:px-5">
+
+        <div>
+            <ul class="flex gap-7">
+                <li class="hover:text-black duration-100 hover:cursor-pointer">SOBRE</li>
+                <li class="border-r-2 pr-7 border-stone-500 hover:text-black duration-100 hover:cursor-pointer">CONTATO
+                </li>
+                <li class="hover:text-black duration-100 hover:cursor-pointer">VAGAS</li>
+            </ul>
+        </div>
+
+        <div class="text-xl flex gap-5 justify-self-end">
+            <i class="fa-solid fa-magnifying-glass hover:cursor-pointer" onclick="search()" id="btn" style="transform: translateX(240px); transition: 100ms;"></i>
+            <input type="text" name="" id="search-bar" class="-translate-y- h-5" placeholder="Search" style="visibility: hidden; transform: translateX(240px);">
+            <i class="fa-brands fa-twitter hover:cursor-pointer"></i>
+            <i class="fa-brands fa-facebook hover:cursor-pointer"></i>
+            <i class="fa-brands fa-instagram hover:cursor-pointer"></i>
+            <p class="rounded-full border-2 text-sm px-3 border-stone-500">Follow</p>
+        </div>
+    </div>
+
+    <div class="mx-40 lg:flex">
+        <img src="https://miro.medium.com/max/1400/1*sYrwfk6mmV9UShX15nF_Fg.jpeg" alt="" class="lg:w-6/12 border-2 border-stone-500 sm:w-full">
+        <div class="grid grid-rows-3 ml-10 sm:gap-10 lg:gap-0">
+            <div>
+                <p class="text-black text-xl font-bold sm:mt-5 lg:mt-0">SwiftUI Property <br> Wrappers Simplificado</p>
+            </div>
+
+            <div>
+                <p class="text-xl">Que tal entender de forma simplificada o significado e casos de uso dos Property
+                    Wrappers?</p>
+            </div>
+
+            <div class="flex">
+                <img src="joao.png" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                <p class="place-self-start mx-4 -translate-y-1">João Gabriel <br> Apr 8 • 9 min read</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid lg:grid-rows-7 lg:grid-cols-3 justify-items-center mx-40 mt-10 gap-10 sm:grid-rows-21 sm:grid-cols-1">
+        <div class="">
+            <div><img src="img1.jpg" alt="" srcset="" class="w-full"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">Ciclo de vida de um produto e modelos de difusão</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">O que podemos tirar de aprendizado da curva em S?</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="victor.jpeg" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">Victor Lima <br> Mar 3 • 6 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img2.jpg" alt="" srcset="" class="w-full"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">Como criar um locátario na Azure AD B2C</p>
+            </div>
+            <div class="">
+                <p class="mt-3 text-md">Ou como começar a lidar com a Azure <br> &nbsp</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="jade.jpeg" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">Jhadefernandes <br> Mar 3 • 5 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img3.jpeg" alt="" srcset="" class="w-full"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">Gestão de “calma aí que tô chegando!”</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">Estamos mesmo sem tempo ou só não estamos sabendo gerenciá-lo?</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="giba.jpeg" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">GiBa (Gilberto Nicolav) <br> Nov 29, 2021 • 5 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img4.jpg" alt="" srcset="" class="w-full"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">Serverless Saga #3 — Produção &nbsp</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">Já diziam: jogo é jogo, treino é treino. <br> &nbsp</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="pedro.png" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">Pedro Correa <br> Oct 19, 2021 • 5 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img5.jpg" alt="" srcset="" class="w-full" style="height: 183px;"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">Serverles Saga #2 — Benchmarks & Custo</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">Será que vale todo o esforço para transformar uma aplicação de serverness para serverless?</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="pedro.png" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">Pedro Correa <br> Oct 19, 2021 • 5 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img6.jpg" alt="" srcset="" class="w-full"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">Serverless Saga #1: De Serverness para Serverless</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">Os desafios para usar serverless na criação de aplicações e APIs.</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="Pedro.png" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">Pedro Correa <br> Oct 19, 2021 • 5 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img7.jpg" alt="" srcset="" class="w-full"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">Cloud e o novo desenvolvimento de produtos</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">A forma de fazer produtos digitais não é mais a mesma.</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="ampacheco.png" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">Ampacheco <br> Nov 10, 2021 • 3 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img8.jpeg" alt="" srcset="" class="w-full"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">Como integrar GitHub Actions com Slack, Telegram e WhatsApp</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">Que tal fazer sua CI mandar um “zap”?</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="joao.png" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">João Gabriel <br> Nov 9, 2021 • 7 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img9.jpg" alt="" srcset="" class="w-full"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">A importância da engenharia para uma cultura Data-driven</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">Não dedicar o esforço correto de engenharia vai dificultar (e muito) a sua jornada.</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="matheus.jpeg" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">Matheus Dias <br> Oct 28, 2021 • 5 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img10.png" alt="" srcset="" class="w-full" style="height: 183px;"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">Rodando Wiremock no Docker</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">Uma forma simples e eficaz para simular uma API que ainda não está pronta</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="ronaldo.jpeg" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">Ronaldo Santos <br> Oct 18, 2021 • 4 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img11.jpg" alt="" srcset="" class="w-full"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">3 práticas que me ajudam a escrever um código melhor</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">E que talvez possam ajudar você também</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="weldison.png" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">Weldisson Araujo <br> Aug 10, 2021 • 3 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img12.jpg" alt="" srcset="" class="w-full"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">Escassez artificial e produtos “members only”</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">Comentários sobre algumas estratégias de crescimento para produtos e serviços</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="victor.jpeg" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">Victor Lima <br> Aug 5, 2021 • 6 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img13.png" alt="" srcset="" class="w-full"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">Prodcast #12 — PO de Consultoria</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">O dia a dia do Product Owner (ou Product Manager) quando ele não é realmente o dono do produto</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="carol.jpeg" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">Carol Almeida <br> Aug 4, 2021 • 1 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img14.gif" alt="" srcset="" class="w-full"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">Como adotar Jetpack Compose em seu projeto Android</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">E fazer UIs em Kotlin sem uma linha de XML</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="wesley.jpeg" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">Wesley Jonathan Marcolino <br> Jul 29, 2021 • 4 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img15.png" alt="" srcset="" class="w-full"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">Afinal, o que é o Jetpack Compose?</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">Vamos entender a nova aposta do Google.</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="ana.png" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">Ana Cecilia Barbosa Alves <br> Jul 28, 2021 • 5 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img16.jpeg" alt="" srcset="" class="w-full"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">ProdCast #11 — Prod caiu. E agora?</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">O que fazer quando produção cair ou você derrubar?</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="carol.jpeg" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">Carol Almeida <br> Jul 27, 2021 • 1 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img17.png" alt="" srcset="" class="w-full"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">Prodcast #10 — API também é produto</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">Como POs podem agir em casos de produtos com viés mais técnico?</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="carol.jpeg" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">Carol Almeida <br> Jul 7, 2021 • 1 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img18.jpg" alt="" srcset="" class="w-full"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">Estratégias de entrada para um produto digital</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">O exemplo da Doordash e o que podemos aprender com ele</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="victor.jpeg" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">Victor Lima <br> Jul 6, 2021 • 8 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img19.png" alt="" srcset="" class="w-full"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">Prodcast #9 — Transição de dev para PO</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">Os desafios de uma transição de carreira na área de Produto</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="carol.jpeg" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">Carol Almeida <br> Jun 9, 2021 • 1 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img20.png" alt="" srcset="" class="w-full"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">Uma PO ‘não-técnica’ e um time dedicado ao back-end de uma aplicação mobile</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">Será que essa história termina bem?</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="maria.jpg" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">Maria Fernanda Tavares <br> Jun 8, 2021 • 8 min read</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="img21.jpg" alt="" srcset="" class="w-full"></div>
+            <div>
+                <p class="text-black text-xl font-bold mt-3">Anotações sobre lead time x complexidade de código</p>
+            </div>
+            <div>
+                <p class="mt-3 text-md">Por que você, como agilista ou pessoa de produto, deve prestar atenção ao codebase?</p>
+            </div>
+            <div>
+                <div class="flex mt-3">
+                    <img src="bruno.jpeg" class="rounded-full border-green-600 border-2 w-10 h-10" alt="" srcset="">
+                    <p class="place-self-start mx-4 -translate-y-1">Bruno Eugênio <br> May 19, 2021 • 4 min read</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="flex justify-center mb-10 mt-20 gap-3">
+            <p>About Accenture Digital Product Dev</p>
+            <p>•</p>
+            <p>Latest Stories</p>
+            <p>•</p>
+            <p>Archive</p>
+            <p>•</p>
+            <p>About Medium</p>
+            <p>•</p>
+            <p>Terms</p>
+            <p>•</p>
+            <p>Privacy</p>
+    </footer>
+
+
+
+    <script>
+
+        window.onresize = resize_check;
+
+        let bar = document.getElementById("search-bar")  
+        let btn = document.getElementById("btn")
+
+        function search(){
+
+            if(bar.style.visibility == "hidden") {
+                bar.style.visibility = "visible";
+                btn.style.transform = "translatex(-10px)";
+                bar.style.transform = "translatex(-10px)";
+            }
+            else {
+                bar.style.visibility = "hidden";
+                btn.style.transform = "translatex(240px)";
+                bar.style.transform = "translatex(240px)";
+            }
+        }
+            
+        function resize_check(){
+            if(window.innerWidth <= 780){
+                bar.style.display = "none"
+                btn.style.display = "none"
+            }
+            else{
+                bar.style.display = "block"
+                btn.style.display = "block"
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
